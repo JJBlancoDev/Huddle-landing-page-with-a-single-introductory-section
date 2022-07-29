@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    background-color: var(--Violet);
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    width: 375px;
+    margin: auto;
+    padding: 25px;
+}
+
+.container__logo {
+    margin: 0px 0px 15px 0px;
+}
+
+.container__images {
+    width: 100%;
+}
+
+.section__container-description {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__title {
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0px;
+}
+
+.container__description {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.container__button {
+    width: 50%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #fff;
+    color: var(--Violet);
+    border-radius: 30px;
+    border: none;
+}
+
+.container__button:hover {
+    color: #fff;
+    background-color: var(--Soft-Magenta);
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer__item {
+    border: solid 1px #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    color: #fff;
+}
+
+.footer__item:hover {
+    color: var(--Soft-Magenta);
+    border: solid 1px  var(--Soft-Magenta);
+    cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+    .container {
+        width: 100%;
+        background-image: url(./images/bg-desktop.svg);
+        background-size: cover;
+        padding: 30px;
+    }
+
+    .header {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .section__container {
+        width: 150%;
+    }
+
+    .section__container-description {
+        justify-content: left;
+        align-items: initial;
+        margin-left: 30px;
+    }
+
+    .container__title {
+        text-align: left;
+    }
+
+    .container__description {
+        text-align: left;
+    }
+
+    .footer {
+        justify-content: right;
+    }
+}
